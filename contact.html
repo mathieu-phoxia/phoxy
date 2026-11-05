@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact | Phoxy</title>
+<meta name="description" content="Envoyez une maquette ou une demande à Phoxy : formulaire de contact et prise de rendez-vous.">
+<link rel="canonical" href="https://phoxy.fr/contact.html">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#060c14">
+<link rel="icon" href="assets/img/favicon-32.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/favicon-180.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+<link rel="preload" as="image" href="assets/img/marque/phoxy-mark-neon.png">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>(function(d){try{var r=matchMedia('(prefers-reduced-motion: reduce)').matches;if(!r&&!sessionStorage.getItem('phoxy-vu'))d.classList.add('avec-chargeur');if(!r&&sessionStorage.getItem('phoxy-rideau'))d.classList.add('arrivee');}catch(e){}})(document.documentElement)</script>
+</head>
+<body>
+<div class="chargeur" data-chargeur aria-hidden="true">
+  <div class="chargeur__centre">
+    <div class="chargeur__marque">
+      <span class="chargeur__onde"></span><span class="chargeur__onde"></span>
+      <img class="chargeur__marque-fond" src="assets/img/marque/phoxy-mark-neon.png" alt="" width="204" height="292">
+      <img class="chargeur__marque-plein" src="assets/img/marque/phoxy-mark-neon.png" alt="" width="204" height="292">
+    </div>
+    <img class="chargeur__texte" src="assets/img/marque/phoxy-text-neon.png" alt="" width="150" height="80">
+    <div class="chargeur__ligne"><i></i></div>
+    <div class="chargeur__infos"><span>SBH → MRS · 124 BPM</span><span data-compte>000 %</span></div>
+  </div>
+</div>
+<a class="saut-contenu" href="#contenu">Aller au contenu</a>
+
+<header class="entete" data-entete>
+  <div class="enveloppe entete__interieur">
+    <a class="marque" href="index.html" aria-label="Phoxy, retour à l'accueil">
+      <img class="marque__logo" src="assets/img/marque/phoxy-text-neon.png" alt="Phoxy">
+      <img class="marque__symbole" src="assets/img/marque/phoxy-mark-neon.png" alt="" aria-hidden="true">
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="nav__lien" href="activites.html">Activités</a>
+      <a class="nav__lien" href="approche.html">Approche</a>
+      <a class="nav__lien" href="methode.html">Méthode</a>
+      <a class="nav__lien" href="catalogue.html">Catalogue</a>
+      <a class="nav__lien" href="equipe.html">Équipe</a>
+      <a class="nav__lien" href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    <button class="bascule-menu" type="button" data-bascule-menu aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="menu-mobile" id="menu-mobile" data-menu-mobile data-ouvert="false">
+  <nav aria-label="Navigation mobile">
+    <a class="menu-mobile__lien" href="activites.html">Activités</a>
+    <a class="menu-mobile__lien" href="approche.html">Approche</a>
+    <a class="menu-mobile__lien" href="methode.html">Méthode</a>
+    <a class="menu-mobile__lien" href="catalogue.html">Catalogue</a>
+    <a class="menu-mobile__lien" href="equipe.html">Équipe</a>
+    <a class="menu-mobile__lien" href="contact.html">Contact</a>
+  </nav>
+  <div class="menu-mobile__pied">
+    <a href="mailto:phoxy.music13@gmail.com">phoxy.music13@gmail.com</a>
+    <a href="https://www.instagram.com/phoxy.music/" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</div>
+
+<main id="contenu">
+  <section class="section" style="padding-top:3.5rem;padding-bottom:2rem">
+    <div class="enveloppe">
+      <p class="etiquette">Contact</p>
+      <h1 class="display display--xl">Un son à nous<br>faire <em>écouter</em> ?</h1>
+      <p class="chapeau" style="margin-top:1.5rem">
+        Formulaire ci-dessous, ou réservez directement un créneau de 30 minutes. Réponse sous 10 jours ouvrés.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0" id="formulaire">
+    <div class="enveloppe grille-contact">
+      <form class="formulaire" data-formulaire action="https://formspree.io/f/REMPLACER_ID" method="POST">
+        <p class="formulaire__etat" data-etat role="status" aria-live="polite"></p>
+
+        <div class="champ--double">
+          <div class="champ">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" autocomplete="name" required>
+          </div>
+          <div class="champ">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+        </div>
+
+        <div class="champ">
+          <label for="sujet">Sujet</label>
+          <select id="sujet" name="sujet">
+            <option>Envoyer une maquette</option>
+            <option>Proposition de collaboration</option>
+            <option>Demande presse</option>
+            <option>Autre</option>
+          </select>
+        </div>
+
+        <div class="champ">
+          <label for="message">Message (collez ici votre lien d'écoute)</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+        <div class="piege" aria-hidden="true">
+          <label for="_gotcha">Ne pas remplir</label>
+          <input type="text" id="_gotcha" name="_gotcha" tabindex="-1" autocomplete="off">
+        </div>
+
+        <div class="groupe-boutons">
+          <button class="bouton bouton--plein" type="submit">
+            Envoyer <svg class="bouton__fleche" width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M9 1l4 4-4 4M13 5H0" stroke="currentColor" stroke-width="1.4"/></svg>
+          </button>
+        </div>
+      </form>
+
+      <div>
+        <div class="bloc-info" data-apparait>
+          <p class="bloc-info__titre">Rendez-vous direct</p>
+          <p class="texte">Trente minutes, sans engagement, pour savoir si votre projet a sa place chez Phoxy.</p>
+          <div class="groupe-boutons" style="margin-top:1.2rem">
+            <a class="bouton bouton--ligne" href="https://calendly.com/mathieu-phoxia/30min" target="_blank" rel="noopener">Réserver un créneau</a>
+          </div>
+        </div>
+        <div class="bloc-info" data-apparait>
+          <p class="bloc-info__titre">Par email</p>
+          <p class="texte"><a href="mailto:phoxy.music13@gmail.com">phoxy.music13@gmail.com</a></p>
+        </div>
+        <div class="bloc-info" data-apparait>
+          <p class="bloc-info__titre">Réseaux</p>
+          <p class="texte">
+            <a href="https://www.instagram.com/phoxy.music/" target="_blank" rel="noopener">Instagram</a> ·
+            <a href="https://www.tiktok.com/@phoxy.music" target="_blank" rel="noopener">TikTok</a> ·
+            <a href="https://soundcloud.com/phoxy-679988799" target="_blank" rel="noopener">SoundCloud</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pied">
+  <div class="enveloppe">
+    <div class="pied__haut">
+      <div>
+        <img class="pied__marque-logo" src="assets/img/marque/phoxy-text-neon.png" alt="Phoxy">
+        <p class="pied__slogan">On sort le son, pas le bruit.</p>
+        <div class="reseaux">
+          <a class="reseau" href="https://www.instagram.com/phoxy.music/" target="_blank" rel="noopener me" aria-label="Phoxy sur Instagram" title="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a class="reseau" href="https://www.tiktok.com/@phoxy.music" target="_blank" rel="noopener me" aria-label="Phoxy sur TikTok" title="TikTok"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.5 2h-3v14.2a2.8 2.8 0 1 1-2.3-2.76V10.4a6.1 6.1 0 1 0 5.3 6.04V8.9a7 7 0 0 0 4 1.27V7.1a4.1 4.1 0 0 1-4-4.1V2Z"/></svg></a>
+          <a class="reseau" href="contact.html#formulaire" aria-label="Écrire à Phoxy" title="Nous écrire"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m3 6 9 6.5L21 6"/></svg></a>
+        </div>
+      </div>
+      <nav aria-labelledby="pied-nav">
+        <p class="pied__titre" id="pied-nav">Navigation</p>
+        <ul class="pied__liste">
+          <li><a href="activites.html">Activités</a></li>
+          <li><a href="approche.html">Approche</a></li>
+          <li><a href="methode.html">Méthode</a></li>
+          <li><a href="catalogue.html">Catalogue</a></li>
+          <li><a href="equipe.html">Équipe</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p class="pied__titre">Contact</p>
+        <ul class="pied__liste">
+          <li><a href="mailto:phoxy.music13@gmail.com">phoxy.music13@gmail.com</a></li>
+          <li>Marseille, France</li>
+          <li>MRS · AIX · SBH · Paris · Lyon</li>
+        </ul>
+      </div>
+      <nav aria-labelledby="pied-legal">
+        <p class="pied__titre" id="pied-legal">Informations</p>
+        <ul class="pied__liste">
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li><a href="politique-de-confidentialite.html">Politique de confidentialité</a></li>
+          <li><a href="sitemap.xml">Plan du site</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="pied__bas">
+      <p>© <span data-annee>2026</span> Phoxy. Un projet de Mathieu Barthélémy.</p>
+      <div class="pied__legal">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="politique-de-confidentialite.html">Confidentialité</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/effets.js" defer></script>
+<script src="assets/js/dj.js" defer></script>
+</body>
+</html>
