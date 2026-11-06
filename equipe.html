@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="utf-8">
@@ -14,21 +14,26 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
-<link rel="preload" as="image" href="assets/img/marque/phoxy-mark-neon.png">
+<link rel="preload" as="image" href="assets/img/marque/phoxy-cigale-nette.png">
 <link rel="stylesheet" href="assets/css/style.css">
 <script>(function(d){try{var r=matchMedia('(prefers-reduced-motion: reduce)').matches;if(!r&&!sessionStorage.getItem('phoxy-vu'))d.classList.add('avec-chargeur');if(!r&&sessionStorage.getItem('phoxy-rideau'))d.classList.add('arrivee');}catch(e){}})(document.documentElement)</script>
 </head>
 <body>
 <div class="chargeur" data-chargeur aria-hidden="true">
   <div class="chargeur__centre">
-    <div class="chargeur__marque">
+    <div class="chargeur__marque cigale">
       <span class="chargeur__onde"></span><span class="chargeur__onde"></span>
-      <img class="chargeur__marque-fond" src="assets/img/marque/phoxy-mark-neon.png" alt="" width="204" height="292">
-      <img class="chargeur__marque-plein" src="assets/img/marque/phoxy-mark-neon.png" alt="" width="204" height="292">
+      <span class="cigale__chant cigale__chant--g"><i></i><i></i><i></i></span>
+      <span class="cigale__chant cigale__chant--d"><i></i><i></i><i></i></span>
+      <img class="chargeur__marque-fond" src="assets/img/marque/phoxy-cigale-nette.png" alt="" width="204" height="292">
+      <div class="chargeur__marque-plein">
+        <span class="cigale__aile cigale__aile--g"><img src="assets/img/marque/phoxy-cigale-nette.png" alt="" width="204" height="292"></span>
+        <span class="cigale__aile cigale__aile--d"><img src="assets/img/marque/phoxy-cigale-nette.png" alt="" width="204" height="292"></span>
+      </div>
     </div>
     <img class="chargeur__texte" src="assets/img/marque/phoxy-text-neon.png" alt="" width="150" height="80">
     <div class="chargeur__ligne"><i></i></div>
-    <div class="chargeur__infos"><span>SBH → MRS · 124 BPM</span><span data-compte>000 %</span></div>
+    <div class="chargeur__infos"><span>La cigale chante · MRS</span><span data-compte>000 %</span></div>
   </div>
 </div>
 <a class="saut-contenu" href="#contenu">Aller au contenu</a>
@@ -41,7 +46,6 @@
     </a>
     <nav class="nav" aria-label="Navigation principale">
       <a class="nav__lien" href="activites.html">Activités</a>
-      <a class="nav__lien" href="approche.html">Approche</a>
       <a class="nav__lien" href="methode.html">Méthode</a>
       <a class="nav__lien" href="catalogue.html">Catalogue</a>
       <a class="nav__lien" href="equipe.html" aria-current="page">Équipe</a>
@@ -56,7 +60,6 @@
 <div class="menu-mobile" id="menu-mobile" data-menu-mobile data-ouvert="false">
   <nav aria-label="Navigation mobile">
     <a class="menu-mobile__lien" href="activites.html">Activités</a>
-    <a class="menu-mobile__lien" href="approche.html">Approche</a>
     <a class="menu-mobile__lien" href="methode.html">Méthode</a>
     <a class="menu-mobile__lien" href="catalogue.html">Catalogue</a>
     <a class="menu-mobile__lien" href="equipe.html">Équipe</a>
@@ -83,14 +86,15 @@
   <section class="section" style="padding-top:0">
     <div class="enveloppe">
       <div class="membre" data-apparait>
-        <div class="membre__avatar">MB</div>
+        <img class="membre__photo" src="assets/img/equipe/mathieu-dj.jpg" alt="Portrait de Mathieu Barthélémy" width="800" height="993" loading="lazy">
         <div>
           <p class="membre__nom">Mathieu Barthélémy</p>
-          <p class="membre__role">Fondateur</p>
+          <p class="membre__role">Fondateur, DJ et producteur</p>
           <p class="membre__bio">
-            Également fondateur de <a href="https://phoxia.fr/" style="color:var(--neon-clair)">Phoxia</a>
-            (conseil en développement commercial). Phoxy est un second projet, mené en parallèle,
-            créé à Saint-Barthélemy, au Tropical St Barth, et basé à Marseille.
+            Créé à Saint-Barthélemy, au Tropical St Barth, et basé à Marseille, Phoxy accompagne les artistes
+            (DJs, chanteurs, rappeurs, producteurs, musiciens) sur tout projet musical.
+            Mathieu est également fondateur de <a href="https://phoxia.fr/" style="color:var(--neon-clair)">Phoxia</a>
+            (agence IA qui accompagne les PME dans la formation et l'application de l'IA).
           </p>
           <a class="membre__lien" href="https://www.linkedin.com/in/mathieu-barth%C3%A9l%C3%A9my-profile/" target="_blank" rel="noopener">LinkedIn</a>
         </div>
@@ -105,14 +109,14 @@
           <p class="etiquette">Où on capte le son</p>
           <h2 class="display display--l">Studios &amp; partenaires</h2>
         </div>
-        <p class="texte">Les labels et studios avec qui Phoxy travaille.</p>
+        <p class="texte">Les labels et studios avec qui Phoxy travaille. Phoxy est ouvert aux collabs et aux partenariats : labels, studios, salles, festivals, marques. <a href="contact.html?sujet=collab#formulaire" style="color:var(--neon-clair)">Proposer une collab</a></p>
       </div>
       <div class="partenaire" data-apparait>
         <div class="partenaire__logo" aria-hidden="true">HR</div>
         <div>
           <p class="partenaire__type">Label partenaire</p>
           <p class="partenaire__nom">Horizon Records</p>
-          <p class="partenaire__texte">Label indépendant basé à Paris.</p>
+          <p class="partenaire__texte">Label indépendant basé à Paris. Ensemble, on accompagne le projet No11embre, dont le single « Une autre fois » est sorti le 6 novembre 2026.</p>
           <a class="partenaire__lien" href="https://www.instagram.com/horizon.records/" target="_blank" rel="noopener">@horizon.records sur Instagram <span aria-hidden="true">↗</span></a>
         </div>
       </div>
@@ -147,7 +151,6 @@
         <p class="pied__titre" id="pied-nav">Navigation</p>
         <ul class="pied__liste">
           <li><a href="activites.html">Activités</a></li>
-          <li><a href="approche.html">Approche</a></li>
           <li><a href="methode.html">Méthode</a></li>
           <li><a href="catalogue.html">Catalogue</a></li>
           <li><a href="equipe.html">Équipe</a></li>
@@ -185,5 +188,6 @@
 <script src="assets/js/main.js" defer></script>
 <script src="assets/js/effets.js" defer></script>
 <script src="assets/js/dj.js" defer></script>
+<script src="assets/js/label.js" defer></script>
 </body>
 </html>
