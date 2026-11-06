@@ -17,7 +17,7 @@
   /* ---------- Rideau de transition entre les pages ---------- */
   var rideau = document.createElement('div');
   rideau.className = 'rideau'; rideau.setAttribute('aria-hidden', 'true');
-  var MARQUE = 'assets/img/marque/phoxy-mark-neon.png';
+  var MARQUE = 'assets/img/marque/phoxy-cigale-nette.png';
   rideau.innerHTML = '<span></span><span></span><span></span><div class="rideau__chargeur"><span class="logo-charge">' +
     '<img class="logo-charge__fond" src="' + MARQUE + '" alt=""><img class="logo-charge__plein" src="' + MARQUE + '" alt=""></span></div>';
   document.body.appendChild(rideau);
